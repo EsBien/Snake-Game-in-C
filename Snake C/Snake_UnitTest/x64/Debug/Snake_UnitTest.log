@@ -1,0 +1,17 @@
+﻿  DynamicMemoryManagement.c
+  HeapCache.c
+  iCache.c
+  InMemoryCache.c
+  ObjectLifecycleManagement.c
+  Runner.c
+C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\Snake_UnitTest\ObjectLifecycleManagement.h(123,1): warning C4005: 'NTEST_ASSERT': macro redefinition
+C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\Snake_UnitTest\UnitTestsInfra.h(85,1): message : see previous definition of 'NTEST_ASSERT'
+  Test.c
+C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\Snake_UnitTest\ObjectLifecycleManagement.h(123,1): warning C4005: 'NTEST_ASSERT': macro redefinition
+C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\Snake_UnitTest\UnitTestsInfra.h(85,1): message : see previous definition of 'NTEST_ASSERT'
+C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\Snake_UnitTest\Test.c(445,1): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\Snake_UnitTest\Test.c(445,1): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\Snake_UnitTest\Test.c(445,1): warning C4129: ' ': unrecognized character escape sequence
+  VirtualFuncCalling.c
+  Generating Code...
+  Snake_UnitTest.vcxproj -> C:\Users\Esther.LAPTOP-48096ABJ\Downloads\Snake C\x64\Debug\Snake_UnitTest.exe

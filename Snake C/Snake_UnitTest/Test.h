@@ -1,0 +1,41 @@
+#pragma once
+#include "UnitTestsInfra.h"
+#include "COOP.h"
+
+DEF_TEST_SUITE(Snake_Game_Test);
+ADD_TEST(Snake_Game_Test, grow_snake__When_UP);
+ADD_TEST(Snake_Game_Test, grow_snake__When_DOWN);
+ADD_TEST(Snake_Game_Test, grow_snake__When_RIGHT);
+ADD_TEST(Snake_Game_Test, grow_snake__When_LEFT);
+ADD_TEST(Snake_Game_Test, grow_snake__When_SeveralTimes);
+
+ADD_TEST(Snake_Game_Test, are_snakes_equal__WhenOfLength_1_test);
+ADD_TEST(Snake_Game_Test, are_snakes_equal__WhenOfLength_4_test);
+ADD_TEST(Snake_Game_Test, are_snakes_equal__WhenNotEqual_OfLength_1_test);
+ADD_TEST(Snake_Game_Test, are_snakes_equal__WhenNotEqual_OfLength_4_test);
+
+ADD_TEST(Snake_Game_Test, create_long_snake_test);
+
+ADD_TEST(Snake_Game_Test, move_snake_test);
+
+ADD_TEST(Snake_Game_Test, will_snake_reach_food_on_next_move__When_left);
+ADD_TEST(Snake_Game_Test, will_snake_reach_food_on_next_move__When_right);
+ADD_TEST(Snake_Game_Test, will_snake_reach_food_on_next_move__When_up);
+ADD_TEST(Snake_Game_Test, will_snake_reach_food_on_next_move__When_down);
+
+ADD_TEST(Snake_Game_Test, will_snake_collide_with_itself_on_next_move__WhenIndeedCollides_test);
+ADD_TEST(Snake_Game_Test, will_snake_collide_with_itself_on_next_move__WhenDoesNotCollides_test);
+ADD_TEST(Snake_Game_Test, will_snake_collide_with_itself_on_next_move__WhenCollidesInMiddleOfBody_test);
+
+ADD_TEST(Snake_Game_Test, will_snake_collide_when_collide_with_border_up_test);
+ADD_TEST(Snake_Game_Test, will_snake_collide_when_collide_with_border_down_test);
+ADD_TEST(Snake_Game_Test, will_snake_collide_when_collide_with_border_right_test);
+ADD_TEST(Snake_Game_Test, will_snake_collide_when_collide_with_border_left_test);
+ADD_TEST(Snake_Game_Test, will_snake_collide_when_will_not_collide_test);
+
+ADD_TEST(Snake_Game_Test, can_snake_move_in_direction_up_test);
+ADD_TEST(Snake_Game_Test, can_snake_move_in_direction_down_test);
+ADD_TEST(Snake_Game_Test, can_snake_move_in_direction_left_test);
+ADD_TEST(Snake_Game_Test, can_snake_move_in_direction_right_test);
+
+END_TEST_SUITE(Snake_Game_Test);

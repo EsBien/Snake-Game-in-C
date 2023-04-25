@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="COOP unitTest">
+      <UniqueIdentifier>{5f055cd0-17a4-452e-af8d-65ad4a74bd5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Runner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicMemoryManagement.c">
+      <Filter>COOP unitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapCache.c">
+      <Filter>COOP unitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="iCache.c">
+      <Filter>COOP unitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="InMemoryCache.c">
+      <Filter>COOP unitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectLifecycleManagement.c">
+      <Filter>COOP unitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualFuncCalling.c">
+      <Filter>COOP unitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassDefMacros.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="COOP.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicMemoryManagement.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportDefs.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapCache.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="iCache.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="InheritenceDefMacros.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="InMemoryCache.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBaseStructs.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectLifecycleManagement.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitTestsInfra.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualFuncCalling.h">
+      <Filter>COOP unitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
