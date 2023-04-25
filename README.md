@@ -1,5 +1,5 @@
 # Snake-Game-in-C
-This Snake Game Project uses C-only a basic console program with no graphics!!.
+This Snake Game Project uses C-only a basic console program with no graphics!!. 
 This game was programmed with a strong understanding of C language and a deep understanding of pointers
 You want to have fun playing the famous "Snake Game", in this project exactly as you would anywhere else.
 The snake can move in any direction according to the user with the help of the keyboard:
