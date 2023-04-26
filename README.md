@@ -12,8 +12,8 @@ Food is placed at various co-ordinates on the screen for the snake to consume.<b
 The snake's length and score will both rise by one element each time it consumes the food.<br />
 # download the project <br/>
 clone the repository to your computer by copying the URL, there will be 3 projects: <br/>
-**Snake_Lib** - implementation of the function, set as library project<br/>
-**Snake_runner** - start project <br/>
+**Snake_Lib** - implementation of the function, set as library project.<br/>
+**Snake_runner** - start project. <br/>
 ![image](https://user-images.githubusercontent.com/96113739/234329399-6c79d93a-5530-421f-b053-e1f80a82e25c.png) <br/>
 **Snake_UnitTest** - tests all function pass.<br/> <br/>
 run the project and this is what you will get:<br/>
