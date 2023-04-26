@@ -58,7 +58,7 @@ void draw_borders()
 
 void draw_food(uint8_t* food)
 {
-	// TODO: Draw the food here!
+	// Draws the food here!
 	gotoxy(food[0], food[1]);
 	printf("%c", FOOD);
 	clear_cursor();
@@ -97,7 +97,6 @@ bool will_snake_collide_with_itself_on_next_move(snake_t snake, size_t snake_siz
 
 void draw_snake(snake_t snake, size_t snake_size)
 {
-	// TODO !
 	for (int i = 0; i < snake_size; i++)
 	{
 		gotoxy(snake[i][0], snake[i][1]);
@@ -106,9 +105,7 @@ void draw_snake(snake_t snake, size_t snake_size)
 }
 void erase_snake_tail(snake_t snake, size_t snake_size)
 {
-	// TODO !
 	gotoxy(snake[0][0], snake[0][1]);
-	//gotoxy(snake[snake_size - 1][0], snake[snake_size - 1][1]);
 	printf("%c", ' ');
 
 }
@@ -118,9 +115,7 @@ void clear_snake(snake_t snake, size_t snake_size)
 	{
 		gotoxy(snake[i][0], snake[i][1]);
 		printf("%c", ' ');
-	
 	}
-	// TODO !
 }
 
 snake_t create_snake(uint8_t x, uint8_t y)
@@ -134,7 +129,6 @@ snake_t create_snake(uint8_t x, uint8_t y)
 }
 void free_snake(snake_t snake, size_t snake_size)
 {
-	// TODO !
 	for (int i = 0; i < snake_size; i++)
 	{
 		free(snake[i]);
@@ -167,7 +161,6 @@ void get_next_snake_head_location(snake_t snake, size_t snake_size, direction_t 
 		break;
 
 	}
-	// TODO: Set the corret values!
 
 }
 
@@ -200,7 +193,6 @@ size_t grow_snake(snake_t* snake_ptr, size_t snake_size, direction_t direction)
 	return ++snake_size;
 }
 
-// correctly implemented, don't touch:
 bool are_snakes_equal(snake_t a, size_t a_size, snake_t b, size_t b_size)
 {
 	if (a_size != b_size)
@@ -219,13 +211,11 @@ bool are_snakes_equal(snake_t a, size_t a_size, snake_t b, size_t b_size)
 
 void move_snake(snake_t snake, size_t snake_size, direction_t to_where)
 {
-	// TODO: Set the corret values!
 	uint8_t next_snake_head_pos[2];
 	get_next_snake_head_location(snake, snake_size, to_where, next_snake_head_pos);
 	for (int i = 0; i < snake_size - 1; i++) {
 		snake[i][0] = snake[i + 1][0];
 		snake[i][1] = snake[i + 1][1];
-
 	}
 	snake[snake_size - 1][0] = next_snake_head_pos[0];
 	snake[snake_size - 1][1] = next_snake_head_pos[1];
@@ -253,7 +243,6 @@ bool will_snake_reach_food_on_next_move(snake_t snake, size_t snake_size, uint8_
 
 bool is_food_on_snake(snake_t snake, size_t snake_size, uint8_t food[2])
 {
-	// TODO
 	if (snake[snake_size - 1][0] == food[0] && snake[snake_size - 1][0] == food[0])
 		return true;
 	return false;
@@ -268,5 +257,4 @@ void set_new_food_location(snake_t snake, size_t snake_size, uint8_t food[2])
 	} while (is_food_on_snake(snake,snake_size,food));
 	gotoxy(food[0], food[1]);
 	printf("%c", FOOD);
-	// TODO
 }
