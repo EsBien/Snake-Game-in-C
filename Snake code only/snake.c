@@ -68,8 +68,8 @@ bool will_snake_collide_border_on_next_move(snake_t snake, size_t snake_size, di
 {
 	uint8_t next_snake_head_pos[2];
 	get_next_snake_head_location(snake, snake_size, direction, next_snake_head_pos);
-	if (next_snake_head_pos[0] == GAME_WIDTH || next_snake_head_pos[1] == GAME_HEIGHT
-		|| next_snake_head_pos[0] == 0 || next_snake_head_pos[1] == 0)
+	if (next_snake_head_pos[0] > GAME_WIDTH || next_snake_head_pos[1] > GAME_HEIGHT
+		|| next_snake_head_pos[0] < 0 || next_snake_head_pos[1] < 0)
 		return true;
 	return false;
 }
@@ -138,13 +138,14 @@ void free_snake(snake_t snake, size_t snake_size)
 
 uint8_t* snake_head(snake_t snake, size_t snake_size)
 {
-	return snake[snake_size-1];
+	return snake[snake_size - 1];
 }
 
 void get_next_snake_head_location(snake_t snake, size_t snake_size, direction_t direction, uint8_t next_snake_head_pos[2])
 {
 	next_snake_head_pos[0] = snake[snake_size - 1][0];
 	next_snake_head_pos[1] = snake[snake_size - 1][1];
+
 	switch (direction)
 	{
 	case UP:
@@ -254,7 +255,7 @@ void set_new_food_location(snake_t snake, size_t snake_size, uint8_t food[2])
 	do {
 		food[0] = 1 + rand() % (GAME_WIDTH - 1);
 		food[1] = 1 + rand() % (GAME_HEIGHT - 1);
-	} while (is_food_on_snake(snake,snake_size,food));
+	} while (is_food_on_snake(snake, snake_size, food));
 	gotoxy(food[0], food[1]);
 	printf("%c", FOOD);
 }
