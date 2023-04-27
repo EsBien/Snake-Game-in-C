@@ -68,8 +68,8 @@ bool will_snake_collide_border_on_next_move(snake_t snake, size_t snake_size, di
 {
 	uint8_t next_snake_head_pos[2];
 	get_next_snake_head_location(snake, snake_size, direction, next_snake_head_pos);
-	if (next_snake_head_pos[0] == GAME_WIDTH || next_snake_head_pos[1] == GAME_HEIGHT
-		|| next_snake_head_pos[0] == 0 || next_snake_head_pos[1] == 0)
+	if (next_snake_head_pos[0] > GAME_WIDTH || next_snake_head_pos[1]  > GAME_HEIGHT
+		|| next_snake_head_pos[0] < 0 || next_snake_head_pos[1]< 0)
 		return true;
 	return false;
 }
@@ -145,6 +145,7 @@ void get_next_snake_head_location(snake_t snake, size_t snake_size, direction_t 
 {
 	next_snake_head_pos[0] = snake[snake_size - 1][0];
 	next_snake_head_pos[1] = snake[snake_size - 1][1];
+	
 	switch (direction)
 	{
 	case UP:
