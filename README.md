@@ -1,25 +1,36 @@
-# Description
-**This Snake Game Project uses C-only a basic console program with no graphics!!.** <br />
-This game was programmed with a strong understanding of C language and a deep understanding of pointers.<br />
-You want to have fun playing the famous "Snake Game", this project workes exactly as you would anywhere else.<br />
-The snake can move in any direction according to the user with the help of the keyboard:<br />
-up -'w',<br />
-down - 's' <br />
-right- 'd'<br />
-left - 'a' <br />
-quit -'q' <br />
-Food is placed at various co-ordinates on the screen for the snake to consume.<br />
-The snake's length and score will both rise by one element each time it consumes the food.<br />
-# download the project <br/>
-clone the repository to your computer by copying the URL, there will be 3 projects: <br/>
-**Snake_Lib** - implementation of the function, set as library project.<br/>
-**Snake_runner** - start project. <br/>
-![image](https://user-images.githubusercontent.com/96113739/234329399-6c79d93a-5530-421f-b053-e1f80a82e25c.png) <br/>
-**Snake_UnitTest** - tests all function pass.<br/> <br/>
-run the project and this is what you will get:<br/>
-![image](https://user-images.githubusercontent.com/96113739/234320084-d7c5de51-3167-4046-a6de-e28c293193af.png)
-**so much fun the snake is growing!!**
-![image](https://user-images.githubusercontent.com/96113739/234320123-a36b1653-5c80-47a7-a320-deed2cd14157.png)
-<br/>
-# download the code only
-The folder "snake code only" has the implementation of Snake code file cpp which you can download and add as you like to your project.
+# Snake Game in C
+This Snake Game Project is a basic console program with no graphics, implemented entirely in C language. <br/>
+It features a strong understanding of the C language and deep knowledge of pointers. <br/>
+
+# How to Play
+To control the snake, use the following keys: <br/>
+
+- Up: 'w'  <br/>
+- Down: 's'  <br/>
+- Right: 'd'  <br/>
+- Left: 'a'  <br/>
+- Quit: 'q'  <br/>
+Food is randomly placed on the screen, and each time the snake eats it, its length and score increase by one.  <br/>
+
+# Installation
+To download and run the project, clone the repository to your computer. The repository includes the following projects:  <br/>
+
+Snake_Lib: Implementation of the game functions, set as library project.  <br/>
+Snake_runner: Start project.  <br/>
+Snake_UnitTest: Tests all functions to ensure everything is working correctly.  <br/>
+To run the project, simply compile and execute the Snake_runner project.  <br/>
+
+# Screenshots
+Here are some screenshots of the game in action:
+
+Snake Game Screenshot 1
+![image](https://user-images.githubusercontent.com/96113739/234320084-d7c5de51-3167-4046-a6de-e28c293193af.png) <br/>
+Snake Game Screenshot 2
+![image](https://user-images.githubusercontent.com/96113739/234320123-a36b1653-5c80-47a7-a320-deed2cd14157.png)  <br/>
+# Code Only
+If you only want the Snake code file (cpp), it is available in the "snake code only" folder.  <br/>
+You can download and add it to your project as needed.  <br/>
+
+
+
+
